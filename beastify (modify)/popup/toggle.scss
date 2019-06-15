@@ -1,0 +1,13 @@
+$dark-color: #111;
+$light-color: #eee;
+body.dark-mode {
+    background-color: $dark-color;
+    color: $light-color;
+    a {
+        color: $dark-color;
+    }
+    button {
+        background-color: $light-color;
+        color: $dark-color;
+    }
+}

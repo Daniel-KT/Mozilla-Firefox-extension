@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_beast.scss" />
+
+</head>
+<!-- <script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script> -->
+
+<body>
+    <p>Choose a Firefox theme:</p>
+    <select name="theme" id="theme-list">
+    </select><br><br>
+    <script src="switcher.js"></script>
+
+
+    <script src="toggle.js"></script>
+    <h2>Enable Dark Mode!</h2>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+
+    </div>
+
+    <!-- <h2 style="font-size:15px;">Dark/Light Mode Switcher</h2>
+    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button> -->
+
+    <!-- <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+        <em>Enable Dark Mode!</em>
+    </div> -->
+
+
+
+
+    <div style="margin-top:20px;" id="popup-content">
+        <h2> Press Buttons</h2>
+        <div class="button beast">Folding Paper Box</div>
+        <div class="button beast">Tie Necktie</div>
+        <div class="button beast">Folding Paper Crane</div>
+        <div class="button beast">Make an Envelope</div>
+        <div class="button reset">Reset</div>
+    </div>
+    <div id="error-content" class="hidden">
+        <p>Can't beastify this web page.</p>
+        <p>Try a different page.</p>
+    </div>
+    <script src="choose_beast.js"></script>
+</body>
+
+</html>
